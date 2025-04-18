@@ -9,3 +9,152 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+}
+
+#first-order-coupon {
+    width: 100%;
+    background-color: #005CFF;
+    padding: 0.5rem 0.75rem;
+}
+
+#first-order-coupon p {
+    color: #fff;
+    text-align: center;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 180%;
+}
+
+#first-order-coupon p span {
+    background-color: #523f8d;
+    padding: 0.05rem;
+}
+
+#first-order-coupon p a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#header-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-button i {
+  font-size: 1.75rem;
+}
+
+.cart-button span {
+    position: absolute;
+    top: 1;
+    right: 0;
+    transform: translate(50%, -50%);
+    background-color: #005CFF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 0.75rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.header-content button i {
+    font-size: 2rem;
+}
+
+#header-container form {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+#header-container form input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 0.875rem;
+}
+
+#header-container form button {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+#header-container form button i {
+    font-size: 1.250rem;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 192px;
+    left: 0;
+    z-index: 999;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+main {
+    margin-top: 12rem;
+    width: 100vw;
+}
+
+.promotion-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E8E9EB;
+}
