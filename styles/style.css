@@ -335,3 +335,10 @@ main {
     color: #005CFF;
     display: none;
 }
+
+.image-mug-contaianer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
