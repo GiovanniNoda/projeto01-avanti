@@ -108,7 +108,7 @@ header {
 
 #header-container form input {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
     border-radius: 8px;
     border: 1px solid #ccc;
     outline: none;
@@ -126,6 +126,12 @@ header {
 
 #header-container form button i {
     font-size: 1.250rem;
+}
+
+#header-container .search-result {
+    font-size: 0.75rem;
+    color: #5e5e5e;
+    font-style: italic;
 }
 
 .mobile-menu {
