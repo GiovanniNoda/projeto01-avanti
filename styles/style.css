@@ -51,7 +51,7 @@ header {
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 1rem;
     gap: 1.5rem;
 }
 
@@ -109,7 +109,7 @@ header {
 #header-container form input {
     width: 100%;
     padding: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 8px;
     border: 1px solid #ccc;
     outline: none;
     font-size: 0.875rem;
@@ -181,12 +181,157 @@ header {
 main {
     margin-top: 12rem;
     width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .promotion-container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     background: #E8E9EB;
+}
+
+.products-container {
+    width: 100%;
+    max-width: 1290px;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem 2rem 1rem 1rem;
+    gap: 1rem;
+}
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-header h2 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.products-header a {
+    color: #303030;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.product {
+    position: relative;
+    width: 174px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.new {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: #00274E;
+    border-radius: 4px;
+    color: white;
+    padding: 0.25rem;
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    font-weight: 700;
+}
+
+.product-info {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+}
+
+.product-info h3 {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.product-price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.price {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.25rem;
+}
+
+.price .old-price {
+    font-size: 0.75rem;
+    text-decoration: line-through;
+    color: #5e5e5e;
+}
+
+.price .new-price {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.discount {
+    font-size: 0.75rem;
+    color: white;
+    font-weight: 700;
+    background-color: #5DC0BE;
+    padding: 0.25rem;
+    border-radius: 4px;
+}
+
+.installments {
+    font-size: 0.75rem;
+    color: #5e5e5e;
+}
+
+.installments strong {
+    font-weight: 700;
+    color: #474747;
+}
+
+.buy-product-button {
+    background-color: #005CFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.buy-product-button:hover {
+    background-color: #0044ba;
+    transition: background-color 0.2s ease;
+}
+
+.swiper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 16px 32px;
+}
+
+.swiper-slide {
+    width: auto;
+}
+
+.swiper-pagination-bullet {
+    background-color: #005CFF;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: #005CFF;
+    display: none;
 }
