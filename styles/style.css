@@ -130,7 +130,7 @@ header {
 
 .mobile-menu {
     position: fixed;
-    top: 192px;
+    top: 190px;
     left: 0;
     z-index: 999;
     width: 50%;
