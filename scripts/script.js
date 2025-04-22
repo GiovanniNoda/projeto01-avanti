@@ -5,11 +5,15 @@ const registerForm = document.getElementById('newsletter-form')
 const nameInput = document.getElementById('name-input')
 const emailInput = document.getElementById('email-input')
 const agreeCheckbox = document.getElementById('agree-checkbox')
+const categories = document.querySelectorAll('.category')
+
+// menu toggle
 
 toggle.addEventListener('click', () => {
     menu.classList.toggle('active')
 })
 
+// search form products
 
 searchForm.addEventListener('submit', (event) => {
     event.preventDefault()
@@ -23,6 +27,8 @@ searchForm.addEventListener('submit', (event) => {
     searchResult.textContent = `Você procurou por "${searchTerm}"`
 })
 
+// user register form
+
 registerForm.addEventListener('submit', (event) => {
     event.preventDefault()
     alert('Cadastro feito com sucesso!')
@@ -30,4 +36,12 @@ registerForm.addEventListener('submit', (event) => {
     nameInput.value = ''
     emailInput.value = ''
     agreeCheckbox.checked = false
+})
+
+// subtitles animation
+
+categories.forEach(category => {
+    category.addEventListener('click', () => {
+        category.classList.toggle('open')
+    })
 })
