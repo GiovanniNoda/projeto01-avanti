@@ -345,6 +345,208 @@ main {
 .image-mug-contaianer {
     width: 100%;
     display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.image-mug {
+    width: 100%;
+    background-color: #C2C2C2;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.image-mug picture img {
+    width: 100%;
+}
+
+.image-mug-text {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.image-mug-text h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+}
+
+.image-mug-text p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+}
+
+.image-kitchen-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.image-kitchen picture img {
+    width: 100%;
+}
+
+.image-kitchen-text {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-kitchen-text h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+}
+
+.image-kitchen-text ul {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+    list-style-type: none;
+}
+
+.image-kitchen-text ul li {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: center;
+}
+
+.image-kitchen-text ul li span {
+    min-width: 50px;
+    min-height: 50px;
+    background-color: #005CFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.image-office-container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.image-office-container picture {
+    width: 100%;
+}
+
+.image-office-container picture img {
+    width: 100%;
+}
+
+.image-office-container span {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+    background-color: #005CFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.form-container h3 span {
+    color: #005CFF;
+}
+
+.form-container form {
+    width: 90%;
+    max-width: 1260px;
+    border-radius: 12px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    background-color: #f2f2f2;
+}
+
+.form-container form input {
+    width: 100%;
+    max-width: 280px;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.form-container form label {
+    font-size: 0.625rem;
+    font-weight: 700;
+    color: #656565;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container form label a {
+    color: #656565;
+    margin-left: 4px;
+}
+
+.form-container form label input {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.form-container form button {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #005CFF;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.form-container form button:hover {
+    cursor: pointer;
+    background-color: #0044ba;
+    transition: all 0.2s ease-in-out;
 }

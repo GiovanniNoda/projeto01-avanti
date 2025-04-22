@@ -91,9 +91,17 @@
 
     <main>
         <div class="promotion-container">
-            <img src="assets/chair-mobile.jpg" alt="">
+            <picture>
+                <source media="(min-width: 1440px)" srcset="assets/chair-desktop.png">
 
-            <img src="assets/mobile-sale.png" alt="">
+                <img src="assets/chair-mobile.jpg" alt="">
+            </picture>
+
+            <picture>
+                <source media="(min-width: 1440px)" srcset="assets/desktop-sale.png">
+
+                <img src="assets/mobile-sale.png" alt="">
+            </picture>
         </div>
 
         <div class="products-container">
@@ -355,7 +363,103 @@
         </div>
 
         <div class="image-mug-contaianer">
-            <img src="assets/mug-mobile.png" alt="">
+            <picture class="image-mug">
+                <source media="(min-width: 768px)" srcset="assets/mug-desktop.png">
+
+                <img src="assets/mug-mobile.png" alt="">
+            </picture>
+
+            <div class="image-mug-text">
+                <h2>Lorem Ipsum</h2>
+
+                <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+                <p>Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel porttitor augue placerat et.</p>
+            </div>
+        </div>
+
+        <div class="image-kitchen-container">
+            <picture class="image-kitchen">
+                <source media="(min-width: 768px)" srcset="assets/kitchen-desktop.jpg">
+
+                <img src="assets/kitchen-mobile.jpg" alt="">
+            </picture>
+
+            <div class="image-kitchen-text">
+                <h2>Lorem Ipsum</h2>
+
+                <ul>
+                    <li>
+                        <span class="location-icon">
+                            <i class="ph ph-map-pin"></i>
+                        </span>
+
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                    </li>
+
+                    <li>
+                        <span class="location-icon">
+                            <i class="ph ph-map-pin"></i>
+                        </span>
+
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                    </li>
+
+                    <li>
+                        <span class="location-icon">
+                            <i class="ph ph-map-pin"></i>
+                        </span>
+
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="image-mug-contaianer">
+            <picture class="image-mug">
+                <source media="(min-width: 768px)" srcset="assets/mug-desktop.png">
+
+                <img src="assets/mug-mobile.png" alt="">
+            </picture>
+
+            <div class="image-mug-text">
+                <h2>Lorem Ipsum</h2>
+
+                <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+                <p>Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel porttitor augue placerat et.</p>
+            </div>
+        </div>
+
+        <div class="image-office-container">
+            <picture>
+                <source media="(min-width: 768px)" srcset="assets/office-desktop.jpg">
+
+                <img src="assets/office-mobile.jpg" alt="">
+            </picture>
+
+            <span>Entre em contato conosco e verifique a disponibilidade para sua região!</span>
+        </div>
+
+        <div class="form-container">
+            <h3>
+                Cadastre-se na nossa <span>newsletter</span>
+            </h3>
+
+            <form id="newsletter-form">
+                <input type="text" placeholder="Digite seu nome" required id="name-input">
+
+                <input type="email" placeholder="Digite seu email" required id="email-input">
+
+                <label>
+                    <input type="checkbox" id="agree-checkbox" required>
+
+                    Estou de acordo com a <a href="#">Política de Privacidade</a>
+                </label>
+
+                <button type="submit">Cadastrar</button>
+            </form>
         </div>
     </main>
 </body>
