@@ -30,28 +30,32 @@ function renderHeaderLayout() {
     } else {
         headerContainer.innerHTML = `
             <div class="header-content">
-                <img src="assets/logo.png" alt="Logo Avanti">
+                <div class="logo-search">
+                    <img src="assets/logo.png" alt="Logo Avanti">
 
-                <form id="search-form">
-                    <input type="text" placeholder="Digite aqui o que você procura">
+                    <form id="search-form">
+                        <input type="text" placeholder="Digite aqui o que você procura">
     
-                    <button><i class="ph ph-magnifying-glass"></i></button>
-                </form>
-
-                <div class="user-info">
-                    <i class="ph ph-user"></i>
-
-                    <div class="user-name">
-                        <span>Olá,</span>
-                        <span>Giovanni Noda!</span>
-                    </div>
+                        <button><i class="ph ph-magnifying-glass"></i></button>
+                    </form>
                 </div>
 
-                <button class="cart-button">
-                    <i class="ph ph-shopping-cart"></i>
+                <div class="user-cart">
+                    <div class="user-info">
+                        <i class="ph ph-user"></i>
 
-                    <span>2</span>
-                </button>
+                        <div class="user-name">
+                            <span>Olá,</span>
+                            <span>Giovanni Noda!</span>
+                        </div>
+                    </div>
+
+                    <button class="cart-button">
+                        <i class="ph ph-shopping-cart"></i>
+
+                        <span>2</span>
+                    </button>
+                </div>
             </div>
 
             <p class="search-result"></p>

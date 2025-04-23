@@ -55,6 +55,7 @@ header {
     max-width: 1260px;
     padding: 1rem 2rem 1rem 1rem;
     gap: 1.5rem;
+    justify-content: space-between;
 }
 
 .header-content {
@@ -62,6 +63,21 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo-search {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.user-cart {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
 }
 
 .header-content button {
@@ -142,6 +158,7 @@ header {
     display: flex;
     width: 100%;
     max-width: 594px;
+    margin: auto;
 }
 
 #search-form input {
@@ -787,3 +804,17 @@ footer p {
     gap: 2rem;
 }
 
+
+@media screen and (min-width: 1024px) {
+   #header-container {
+        gap: 1rem;
+   }
+
+   #search-form {
+        margin: 0;
+   }
+
+   main {
+    margin-top: 10rem;
+   }
+}
