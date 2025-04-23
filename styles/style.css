@@ -574,7 +574,7 @@ main {
     color: #005CFF;
 }
 
-.form-container form {
+#newsletter-form {
     width: 90%;
     max-width: 1260px;
     border-radius: 12px;
@@ -587,7 +587,7 @@ main {
     background-color: #f2f2f2;
 }
 
-.form-container form input {
+#newsletter-form input {
     width: 100%;
     max-width: 280px;
     border: none;
@@ -595,7 +595,7 @@ main {
     border-radius: 8px;
 }
 
-.form-container form label {
+#newsletter-form label {
     font-size: 0.625rem;
     font-weight: 700;
     color: #656565;
@@ -605,18 +605,18 @@ main {
     justify-content: center;
 }
 
-.form-container form label a {
+#newsletter-form label a {
     color: #656565;
     margin-left: 4px;
 }
 
-.form-container form label input {
+#newsletter-form label input {
     width: 16px;
     height: 16px;
     margin-right: 8px;
 }
 
-.form-container form button {
+#newsletter-form button {
     width: 100%;
     max-width: 280px;
     border: none;
@@ -628,7 +628,7 @@ main {
     font-weight: 700;
 }
 
-.form-container form button:hover {
+#newsletter-form button:hover {
     cursor: pointer;
     background-color: #0044ba;
     transition: all 0.2s ease-in-out;
@@ -826,7 +826,7 @@ footer p {
 
    .mobile-menu {
     position: fixed;
-    top: 160px;
+    top: 155px;
     left: 0;
     z-index: 998;
     width: 100%;
@@ -860,5 +860,122 @@ footer p {
 
     .swiper-button-prev, .swiper-button-next {
         display: flex;
+    }
+
+    .image-mug-contaianer {
+        max-width: 80%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items:  center;
+        margin-bottom: 3rem;
+    }
+
+    .image-mug-text h2 {
+        font-size: 2rem;
+    }
+
+    .image-mug-text p {
+        font-size: 1rem;
+    }
+
+    .image-kitchen-container {
+        flex-flow: row-reverse nowrap;
+        justify-content: flex-end;
+        padding: 2rem 4rem;
+        gap: 4rem;
+    }
+
+    .image-kitchen-text {
+        gap: 3rem;
+        width: 40%;
+    }
+
+    .image-kitchen-text h2 {
+        font-size: 2rem;
+    }
+
+    .image-kitchen-text ul {
+        gap: 4rem;
+    }
+
+    .image-kitchen-text ul li {
+        gap: 1rem;
+    }
+
+    .image-kitchen-text ul li span {
+        min-width: 70px;
+        min-height: 70px;
+        font-size: 2.5rem;
+    }
+
+    .image-kitchen-text ul li p {
+        font-size: 1rem;
+    }
+    
+    .image-office-container span {
+        padding: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .form-container {
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    #newsletter-form {
+        width: 90%;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    #newsletter-form button {
+        max-width: 120px;
+    }    
+
+    .header-info-content {
+        width: 85%;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8rem;
+    }
+
+    .header-info {
+        width: auto;
+    }
+
+    .info-content {
+        width: 100%;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .category {
+        border-bottom: none;
+        cursor: auto;
+        padding: 0;
+    }
+
+    .category-title {
+      margin-bottom: 1rem;
+    }
+
+    .category:first-child {
+        border-top: none;
+    }
+
+    .category-title i {
+        display: none;
+    }
+    
+    .category-list {
+        all: inherit;
+        list-style-type: none;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0.3rem;
     }
 }
