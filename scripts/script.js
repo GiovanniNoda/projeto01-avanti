@@ -25,6 +25,8 @@ searchForm.addEventListener('submit', (event) => {
         return
     }
     searchResult.textContent = `Você procurou por "${searchTerm}"`
+
+    searchForm.reset()
 })
 
 // user register form
