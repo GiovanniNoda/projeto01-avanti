@@ -50,7 +50,9 @@ header {
 #header-container {
     display: flex;
     flex-flow: column nowrap;
+    margin: auto;
     width: 100%;
+    max-width: 1260px;
     padding: 1rem 2rem 1rem 1rem;
     gap: 1.5rem;
 }
@@ -100,13 +102,49 @@ header {
     font-size: 2rem;
 }
 
-#header-container form {
+.menu-desktop .menu-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: black;
+}
+
+.menu-desktop .menu-toggle i {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.menu-desktop .menu-toggle span {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.menu-desktop  {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-desktop li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+#search-form {
     position: relative;
     display: flex;
     width: 100%;
+    max-width: 594px;
 }
 
-#header-container form input {
+#search-form input {
     width: 100%;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     border-radius: 8px;
@@ -115,7 +153,7 @@ header {
     font-size: 0.875rem;
 }
 
-#header-container form button {
+#search-form button {
     position: absolute;
     right: 12px;
     top: 8px;
@@ -124,14 +162,40 @@ header {
     border: none;
 }
 
-#header-container form button i {
+#search-form button i {
     font-size: 1.250rem;
+}
+
+.user-info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-info i {
+    font-size: 2rem;
+    color: #005CFF;
+    font-weight: 500;
+}
+
+.user-name {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.user-name span {
+    font-size: 0.875rem;
+    color: black;
+    font-weight: 500;
 }
 
 #header-container .search-result {
     font-size: 0.75rem;
     color: #5e5e5e;
     font-style: italic;
+    margin: auto;
 }
 
 .mobile-menu {
