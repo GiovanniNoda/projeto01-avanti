@@ -558,7 +558,7 @@ main {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
     background-color: #f2f2f2;
     padding: 3rem 0;
 }
@@ -590,7 +590,11 @@ main {
     gap: 2rem;
 }
 
-.header-icons i {
+.header-icons a {
+    text-decoration: none;
+}
+
+.header-icons a i {
     font-size: 2rem;
     color: #005CFF;
     font-weight: 500;
@@ -633,6 +637,8 @@ main {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .category.open .category-list {
@@ -647,3 +653,73 @@ main {
 .category.open .category-title i {
     transform: rotate(180deg);
   }
+
+.category-list li {
+    padding-top: 0.5rem;
+}
+
+.category-list li h5 a {
+    text-decoration: none;
+    color: #656565;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.category-list li h5 a:hover {
+    text-decoration: underline;
+}
+
+.category-list li h5 span {
+    color: #656565;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.category-list li h5 span strong {
+    color: black;
+    font-weight: 700;
+}
+
+.payment-method {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 1rem 2rem;
+}
+
+footer p {
+   font-size: 0.75rem;
+   font-weight: 400;
+   text-align: center;
+   max-width: 1000px;
+}
+
+.footer-img-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.footer-img {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
