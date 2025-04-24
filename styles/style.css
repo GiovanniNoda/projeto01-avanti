@@ -365,7 +365,8 @@ main {
 .product-price {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
+    gap: 0.25rem;
 }
 
 .price {
@@ -386,7 +387,10 @@ main {
 }
 
 .discount {
-    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.65rem;
     color: var(--white-color);
     font-weight: 700;
     background-color: var(--green-price-color);
@@ -825,6 +829,14 @@ footer p {
 @media screen and (min-width: 768px) {
     .promotion-container {
         gap: 12rem;
+    }
+
+    .discount {
+        font-size: 0.75rem;
+    }
+
+    .product-price {
+        gap: 0.5rem;
     }
 }
 

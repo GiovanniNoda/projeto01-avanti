@@ -15,6 +15,9 @@ new Swiper('.swiper', {
 
    breakpoints: {
        0: {
+           slidesPerView: 1,
+       },
+       375: {
            slidesPerView: 2,
        },
        768: {
