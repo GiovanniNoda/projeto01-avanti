@@ -1,3 +1,20 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+
+    --primary-blue-color: #005CFF;
+    --hover-blue-color: #0044ba;
+
+    --purple-span-color: #523f8d;
+
+    --green-price-color: #5DC0BE;
+
+    --border-gray-color: #ccc;
+    --background-mug-color: #C2C2C2;
+
+    --gray-100: #f2f2f2;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,32 +34,32 @@ header {
     width: 100vw;
     display: flex;
     flex-flow: column nowrap;
-    background-color: white;
+    background-color: var(--white-color);
 }
 
 #first-order-coupon {
     width: 100%;
-    background-color: #005CFF;
+    background-color: var(--primary-blue-color);
     padding: 0.5rem 0.75rem;
 }
 
 #first-order-coupon p {
-    color: #fff;
+    color: var(--white-color);
     text-align: center;
-    color: white;
+    color: var(--white-color);
     font-size: 0.875rem;
     font-weight: 700;
     line-height: 180%;
 }
 
 #first-order-coupon p span {
-    background-color: #523f8d;
+    background-color: var(--purple-span-color);
     padding: 0.05rem;
 }
 
 #first-order-coupon p a {
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
     font-weight: 400;
     font-style: italic;
 }
@@ -102,12 +119,12 @@ header {
     top: 1;
     right: 0;
     transform: translate(50%, -50%);
-    background-color: #005CFF;
+    background-color: var(--primary-blue-color);
     border-radius: 50%;
     width: 20px;
     height: 20px;
     font-size: 0.75rem;
-    color: white;
+    color: var(--white-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,7 +142,7 @@ header {
     display: flex;
     justify-content: start;
     align-items: center;
-    color: black;
+    color: var(--black-color);
 }
 
 .menu-desktop .menu-toggle i {
@@ -148,7 +165,7 @@ header {
 
 .menu-desktop li a {
     text-decoration: none;
-    color: black;
+    color: var(--black-color);
     font-size: 0.875rem;
     font-weight: 400;
 }
@@ -165,7 +182,7 @@ header {
     width: 100%;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-gray-color);
     outline: none;
     font-size: 0.875rem;
 }
@@ -193,7 +210,7 @@ header {
 
 .user-info i {
     font-size: 2rem;
-    color: #005CFF;
+    color: var(--primary-blue-color);
     font-weight: 500;
 }
 
@@ -204,7 +221,7 @@ header {
 
 .user-name span {
     font-size: 0.875rem;
-    color: black;
+    color: var(--black-color);
     font-weight: 500;
 }
 
@@ -222,7 +239,7 @@ header {
     z-index: 999;
     width: 50%;
     height: 100%;
-    background-color: white;
+    background-color: var(--white-color);
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     display: flex;
@@ -243,7 +260,7 @@ header {
 
 .mobile-menu ul li {
     cursor: pointer;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--border-gray-color);
     padding: 1rem 0;
 }
 
@@ -253,11 +270,11 @@ header {
     align-items: center;
     font-weight: 700;
     text-decoration: none;
-    color: black;
+    color: var(--black-color);
 }
 
 .mobile-menu ul li a:hover {
-    color: #005CFF;
+    color: var(--primary-blue-color);
 }
 
 .mobile-menu ul li a i {
@@ -314,8 +331,8 @@ main {
     display: flex;
     flex-flow: column nowrap;
     gap: 0.5rem;
-    background: white;
-    border: 1px solid #ccc;
+    background: var(--white-color);
+    border: 1px solid var(--border-gray-color);
     border-radius: 8px;
     padding: 0.5rem;
     cursor: pointer;
@@ -327,7 +344,7 @@ main {
     left: 8px;
     background-color: #00274E;
     border-radius: 4px;
-    color: white;
+    color: var(--white-color);
     padding: 0.25rem;
     text-transform: uppercase;
     font-size: 0.625rem;
@@ -370,9 +387,9 @@ main {
 
 .discount {
     font-size: 0.75rem;
-    color: white;
+    color: var(--white-color);
     font-weight: 700;
-    background-color: #5DC0BE;
+    background-color: var(--green-price-color);
     padding: 0.25rem;
     border-radius: 4px;
 }
@@ -388,8 +405,8 @@ main {
 }
 
 .buy-product-button {
-    background-color: #005CFF;
-    color: white;
+    background-color: var(--primary-blue-color);
+    color: var(--white-color);
     border: none;
     border-radius: 8px;
     padding: 0.5rem;
@@ -399,7 +416,7 @@ main {
 }
 
 .buy-product-button:hover {
-    background-color: #0044ba;
+    background-color: var(--hover-blue-color);
     transition: background-color 0.2s ease;
 }
 
@@ -415,11 +432,11 @@ main {
 }
 
 .swiper-pagination-bullet {
-    background-color: #005CFF;
+    background-color: var(--primary-blue-color);
 }
 
 .swiper-button-prev, .swiper-button-next {
-    color: #005CFF;
+    color: var(--primary-blue-color);
     display: none;
 }
 
@@ -432,7 +449,7 @@ main {
 
 .image-mug {
     width: 100%;
-    background-color: #C2C2C2;
+    background-color: var(--background-mug-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -467,7 +484,7 @@ main {
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
-    background-color: #f2f2f2;
+    background-color: var(--gray-100);
     justify-content: center;
     align-items: center;
     padding: 1rem;
@@ -514,12 +531,12 @@ main {
 .image-kitchen-text ul li span {
     min-width: 50px;
     min-height: 50px;
-    background-color: #005CFF;
+    background-color: var(--primary-blue-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--white-color);
     font-size: 2rem;
 }
 
@@ -544,11 +561,11 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1rem;
-    color: white;
+    color: var(--white-color);
     font-size: 1rem;
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
-    background-color: #005CFF;
+    background-color: var(--primary-blue-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -571,7 +588,7 @@ main {
 }
 
 .form-container h3 span {
-    color: #005CFF;
+    color: var(--primary-blue-color);
 }
 
 #newsletter-form {
@@ -584,7 +601,7 @@ main {
     align-items: center;
     gap: 1rem;
     padding: 2rem 1rem;
-    background-color: #f2f2f2;
+    background-color: var(--gray-100);
 }
 
 #newsletter-form input {
@@ -622,15 +639,15 @@ main {
     border: none;
     padding: 1rem;
     border-radius: 8px;
-    background-color: #005CFF;
-    color: white;
+    background-color: var(--primary-blue-color);
+    color: var(--white-color);
     font-size: 1rem;
     font-weight: 700;
 }
 
 #newsletter-form button:hover {
     cursor: pointer;
-    background-color: #0044ba;
+    background-color: var(--hover-blue-color);
     transition: all 0.2s ease-in-out;
 }
 
@@ -641,7 +658,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    background-color: #f2f2f2;
+    background-color: var(--gray-100);
     padding: 3rem 0;
 }
 
@@ -678,7 +695,7 @@ main {
 
 .header-icons a i {
     font-size: 2rem;
-    color: #005CFF;
+    color: var(--primary-blue-color);
     font-weight: 500;
 }
 
@@ -692,13 +709,13 @@ main {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    border-bottom: 1px solid #C2C2C2;
+    border-bottom: 1px solid var(--border-gray-color);
     padding: 1rem 2rem;
     cursor: pointer;
 }
 
 .category:first-child {
-    border-top: 1px solid #C2C2C2;
+    border-top: 1px solid var(--border-gray-color);
 }
 
 .category-title {
@@ -710,7 +727,7 @@ main {
 
 .category-title i {
     font-size: 1rem;
-    color: #005CFF;
+    color: var(--primary-blue-color);
     font-weight: 700;
 }
 
@@ -758,7 +775,7 @@ main {
 }
 
 .category-list li h5 span strong {
-    color: black;
+    color: var(--black-color);
     font-weight: 700;
 }
 
@@ -831,7 +848,7 @@ footer p {
     z-index: 998;
     width: 100%;
     height: 7%;
-    background-color: white;
+    background-color: var(--white-color);
     transform: translateY(-200%);
     transition: transform 0.3s ease;
     display: flex;
