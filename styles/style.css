@@ -10,9 +10,15 @@
     --green-price-color: #5DC0BE;
 
     --border-gray-color: #ccc;
-    --background-mug-color: #C2C2C2;
+    --mug-background-color: #C2C2C2;
+    --promotion-container-background-color: #E8E9EB;
+
+    --font-color-100: #656565;
+    --font-color-200: #5e5e5e;
 
     --gray-100: #f2f2f2;
+    --gray-300: #474747;
+    --gray-400: #303030;
 }
 
 * {
@@ -227,7 +233,7 @@ header {
 
 #header-container .search-result {
     font-size: 0.75rem;
-    color: #5e5e5e;
+    color: var(--font-color-200);
     font-style: italic;
     margin: auto;
 }
@@ -296,7 +302,7 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: #E8E9EB;
+    background: var(--promotion-container-background-color);
 }
 
 .products-container {
@@ -320,7 +326,7 @@ main {
 }
 
 .products-header a {
-    color: #303030;
+    color: var(--gray-400);
     font-size: 0.875rem;
     font-weight: 700;
 }
@@ -378,7 +384,7 @@ main {
 .price .old-price {
     font-size: 0.75rem;
     text-decoration: line-through;
-    color: #5e5e5e;
+    color: var(--font-color-200);
 }
 
 .price .new-price {
@@ -400,12 +406,12 @@ main {
 
 .installments {
     font-size: 0.75rem;
-    color: #5e5e5e;
+    color: var(--font-color-200);
 }
 
 .installments strong {
     font-weight: 700;
-    color: #474747;
+    color: var(--gray-300);
 }
 
 .buy-product-button {
@@ -453,7 +459,7 @@ main {
 
 .image-mug {
     width: 100%;
-    background-color: var(--background-mug-color);
+    background-color: var(--mug-background-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -619,7 +625,7 @@ main {
 #newsletter-form label {
     font-size: 0.625rem;
     font-weight: 700;
-    color: #656565;
+    color: var(--font-color-100);
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -627,7 +633,7 @@ main {
 }
 
 #newsletter-form label a {
-    color: #656565;
+    color: 656565;
     margin-left: 4px;
 }
 
@@ -763,7 +769,7 @@ main {
 
 .category-list li h5 a {
     text-decoration: none;
-    color: #656565;
+    color: var(--font-color-100);
     font-size: 0.875rem;
     font-weight: 700;
 }
@@ -773,7 +779,7 @@ main {
 }
 
 .category-list li h5 span {
-    color: #656565;
+    color: var(--font-color-100);
     font-size: 0.875rem;
     font-weight: 500;
 }
